@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <img class="page-header__city-emblem" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Эмблема города Седона">
+      <a class="page-header__logo secondary-page-logo" href="index.html">
+        <img class="secondary-page-logo__image" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Логотип туристического сайта города Седона">
+        <img class="secondary-page-logo__paysage" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Горный пейзаж рядом с городом Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item--active"><a>Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="form-main">
+      <h1 class="visually-hidden">Форма отзыва</h1>
+      <section class="review">
+        <h2 class="review__title">Оставьте свой отзыв</h2>
+        <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="review__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="review__part_wrapper presentation-part">
+            <!-- Нужно/можно ли использовать заголовки h2 внутри form? Здесь у меня p: -->
+            <p class="review__part-title">Представьтесь:</p>
+            <!-- нужен ли здесь ul? или годится череда параграфов? -->
+            <p class="review__part-item">
+              <label class="review__label" for="first-name-id">Имя*:</label>
+              <input class="review__input" id="first-name-id" type="text" name="first-name" value="" placeholder="Петр">
+            </p>
+            <p class="review__part-item">
+              <label class="review__label" for="surname-id">Фамилия*:</label>
+              <input class="review__input" id="surname-id" type="text" name="surname" value="" placeholder="Иванов">
+            </p>
+            <p class="review__part-item">
+              <label class="review__label" for="patronymic-id">Отчество</label>
+              <input class="review__input" id="patronymic-id" type="text" name="patronymic" value="" placeholder="Александрович">
+            </p>
+          </div>
+          <div class="review__part-wrapper contactinfo-part">
+            <p class="review__part-title">Контактная информация:</p>
+            <p class="review__part-item">
+              <label class="review__label" for="tel-id">Контактный телефон*:</label>
+              <input class="review__input contactinfo-part__input--tel" id="tel-id" type="tel" name="tel" value="" placeholder="Введите телефон">
+            </p>
+            <p class="review__part-item">
+              <label class="review__label" for="email-id">Электронная почта*:</label>
+              <input class="review__input contactinfo-part__input--email" id="email-id" type="email" name="email" value="" placeholder="Введите e-mail">
+            </p>
+          </div>
+          <div class="review__part-wrapper impression-part">
+            <p class="review__part-title">Ваше общее впечатление:</p>
+            <fieldset class="impression-part__fieldset">
+              <ul class="impression-part__list">
+                <li class="impression-part__list-item">
+                  <input class="impression-part__input" id="mainly-positive-id" type="radio" name="impression" value="mainly-positive">
+                  <label class="impression-part__label" for="mainly-positive-id">Скорее положительное</label>
+                </li>
+                <li class="impression-part__list-item">
+                  <input class="impression-part__input" id="mainly-negative-id" type="radio" name="impression" value="mainly-negative">
+                  <label class="impression-part__label" for="mainly-negative-id">Скорее отрицательное</label>
+                </li>
+                <li class="impression-part__list-item">
+                  <input class="impression-part__input" id="hard-to-say-id" type="radio" name="impression" value="hard-to-say">
+                  <label class="impression-part__label" for="hard-to-say-id">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button class="review__button button" type="submit" name="button">Отправить отзыв</button>
+        </form>
+      </section>
+      <section class="modal modal-form gone-wrong-section">
+        <h2 class="modal-form__title">Что-то пошло не так!</h2>
+        <p class="modal-form__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-form__button button" type="button" name="button">Ok</button>
+      </section>
+      <section class="modal modal-form thanks-section">
+        <h2 class="modal-form__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-form__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+        <button class="modal-form__button button" type="button" name="button">Закрыть окно</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
+      <div class="page-footer__wrapper social">
+        <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+        <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+        <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+      </div>
+      <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
+    </footer>
+  </body>
+</html>

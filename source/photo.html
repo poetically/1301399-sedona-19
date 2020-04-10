@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <img class="page-header__city-emblem" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Эмблема города Седона">
+      <a class="page-header__logo secondary-page-logo" href="index.html">
+        <img class="secondary-page-logo__image" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Логотип туристического сайта города Седона">
+        <img class="secondary-page-logo__paysage" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Горный пейзаж рядом с городом Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item--active"><a>Фото и видео</a></li>
+            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="photo-main">
+      <h1>Фото и видео</h1>
+      <section class="photos">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <p class="photos__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+        <ul class="photos__list">
+          <li class="photos__list-item">
+            <!-- возможно, это не h3, а часть figcaption, учитывая необходимость перестановки при стилизации? -->
+            <h3 class="photos__item-title">Неродные просторы</h3>
+            <figure class="photos__figure">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Вечерний пейзаж: автодорога, уходящая вдаль">
+              </a>
+              <figcaption class="photos__figcaption">Автор фото: Борис</figcaption>
+            </figure>
+            <!--не знаю, какой тег полагается счетчику лайков...  -->
+            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">1350</span>
+          </li>
+          <li class="photos__list-item">
+            <h3 class="photos__item-title">Местная растительность</h3>
+            <figure class="photos__figure">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Крупный план растения на фоне пейзажа">
+              </a>
+              <figcaption class="photos__figcaption">Автор фото: Сергей</figcaption>
+            </figure>
+            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">143</span>
+          </li>
+          <li class="photos__list-item">
+            <h3 class="photos__item-title">Дорога на север</h3>
+            <figure class="photos__figure">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Вид на горный серпантин">
+              </a>
+              <figcaption class="photos__figcaption">Автор фото: Петр</figcaption>
+            </figure>
+            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">96</span>
+          </li>
+          <li class="photos__list-item">
+            <h3 class="photos__item-title">Мост Дьявола</h3>
+            <figure class="photos__figure">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Вид на Мост Дьвола">
+              </a>
+              <figcaption class="photos__figcaption">Автор фото: Антон</figcaption>
+            </figure>
+            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">254</span>
+          </li>
+        </ul>
+      </section>
+      <section class="videos">
+        <h2 class="visually-hidden">Видеоролики</h2>
+        <p class="videos__intro"><span class="videos-intro--bold">Все еще сомневаетесь? </span>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <!-- video -->
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
+      <div class="page-footer__wrapper social">
+        <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+        <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+        <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+      </div>
+      <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
+    </footer>
+  </body>
+</html>
