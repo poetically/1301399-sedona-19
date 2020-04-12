@@ -6,35 +6,34 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__city-emblem" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Эмблема города Седона">
-      <a class="page-header__logo main-page-logo" href="#">
-        <img class="main-page-logo__image" src="https://via.placeholder.com/281x214" width="281" height="214" alt="Логотип туристического сайта города Седона">
-        <img class="main-page-logo__paysage" src="https://via.placeholder.com/320x389" width="320" height="389" alt="Горный пейзаж, видимый из города">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Эмблема города Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item--active"><a>Главная</a></li>
+            <li class="site-list-item site-list__item--active"><a>Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
             <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
           </ul>
         </div>
       </nav>
+      <img class="page-header__sedona-lettering" src="https://via.placeholder.com/281x214" width="281" height="214" alt="Логотип туристического сайта города Седона">
+      <img class="page-header__paysage" src="https://via.placeholder.com/320x389" width="320" height="389" alt="Горный пейзаж, видимый из города">
     </header>
     <main class="page-main">
-      <!-- странноватый h1, но ведь в нем надо передать всё содержание main, верно? -->
       <h1 class="visually-hidden">Основные сведения о городе Седона и возможность бронирования отеля</h1>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="advatages__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="advatages__5-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="advantages__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="advantages__reasons-list reasons-list">
           <li class="reasons-list__item">
             <h3 class="reasons-list__title">Настоящий городок</h3>
-            <!--  №1 - это отдельный параграф?.. -->
-            <p class="reasons-list__comment">№1 Седона не аттракцион для туристов, там течет настоящая жизнь</p>
+            <p class="reasons-list__number">№1</p>
+            <p class="reasons-list__comment">Седона не аттракцион для туристов, там течет настоящая жизнь</p>
             <img class="reasons-list__image" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Традиционный деревянный дом с галереей">
             <ul class="reasons-list__further-comment further-comment">
               <li class="further-comment__item further-comment__item--motel">
@@ -53,20 +52,24 @@
           </li>
           <li class="reasons-list__item">
             <h3 class="reasons-list__title">Там есть Мост Дьявола</h3>
-            <p class="reasons-list__comment">№2 Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="reasons-list__number">№2</p>
+            <p class="reasons-list__comment">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img class="reasons-list__image" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Мост Дьявола, представляющий из себя скалистый выступ над пропастью">
           </li>
           <li class="reasons-list__item">
             <h3 class="reasons-list__title">Небольшая площадь</h3>
-            <p class="reasons-list__comment">№3 Все интересные места находятся очень близко</p>
+            <p class="reasons-list__number">№3</p>
+            <p class="reasons-list__comment">Все интересные места находятся очень близко</p>
           </li>
           <li class="reasons-list__item">
             <h3 class="reasons-list__title">Красивая дорога</h3>
-            <p class="reasons-list__comment">№4 Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="reasons-list__number">№4</p>
+            <p class="reasons-list__comment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="reasons-list__item">
             <h3 class="reasons-list__title">Мало туристов</h3>
-            <p class="reasons-list__comment">№5 Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="reasons-list__number">№5</p>
+            <p class="reasons-list__comment">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
@@ -77,15 +80,15 @@
         <a class="main-booking__search-button" href="#">Найти гостиницу</a>
         <img class="main-booking__map" src="https://via.placeholder.com/320x350" width="320" height="350" alt="Карта штата Аризона">
       </section>
-      <footer class="page-footer">
-        <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
-        <div class="page-footer__wrapper social">
-          <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
-          <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-          <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
-        </div>
-        <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
-      </footer>
     </main>
+    <footer class="page-footer">
+      <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
+      <div class="page-footer__wrapper social">
+        <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+        <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+        <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+      </div>
+      <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
+    </footer>
   </body>
 </html>
