@@ -15,7 +15,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="site-list-item site-list__item--active"><a>Форма отзыва</a></li>
+            <li class="site-list__item site-list__item--active"><a>Форма отзыва</a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
           </ul>
         </div>
@@ -31,7 +31,6 @@
         <form class="review-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="review-form__part-wrapper presentation-part">
             <h2 class="review-form__part-title">Представьтесь:</h2>
-            <!-- нужен ли здесь ul? или годится череда параграфов? -->
             <p class="review-form__part-item textfield">
               <label class="textfield__label" for="first-name-id">Имя*:</label>
               <input class="textfield__input" id="first-name-id" type="text" name="first-name" value="" placeholder="Петр" required>
@@ -59,50 +58,46 @@
           <div class="review-form__part-wrapper impression-part">
             <h2 class="review-form__part-title">Ваше общее впечатление:</h2>
             <fieldset class="impression-part__fieldset">
-              <ul class="impression-part__list">
-                <li class="impression-part__list-item radio">
-                  <input class="radio__input" id="mainly-positive-id" type="radio" name="impression" value="mainly-positive">
-                  <label class="radio__label" for="mainly-positive-id">Скорее положительное</label>
-                </li>
-                <li class="impression-part__list-item radio">
-                  <input class="radio__input" id="mainly-negative-id" type="radio" name="impression" value="mainly-negative">
-                  <label class="radio__label" for="mainly-negative-id">Скорее отрицательное</label>
-                </li>
-                <li class="impression-part__list-item radio">
-                  <input class="radio__input" id="hard-to-say-id" type="radio" name="impression" value="hard-to-say">
-                  <label class="radio__label" for="hard-to-say-id">Затрудняюсь ответить</label>
-                </li>
-              </ul>
+              <p class="review-form__part-item radio">
+                <input class="radio__input" id="mainly-positive-id" type="radio" name="impression" value="mainly-positive">
+                <label class="radio__label" for="mainly-positive-id">Скорее положительное</label>
+              </p>
+              <p class="review-form__part-item radio">
+                <input class="radio__input" id="mainly-negative-id" type="radio" name="impression" value="mainly-negative">
+                <label class="radio__label" for="mainly-negative-id">Скорее отрицательное</label>
+              </p>
+              <p>
+                <input class="radio__input" id="hard-to-say-id" type="radio" name="impression" value="hard-to-say">
+                <label class="radio__label" for="hard-to-say-id">Затрудняюсь ответить</label>
+              <p class="review-form__part-item radio">
             </fieldset>
           </div>
           <div class="review-form__part-wrapper sights-visited">
             <h2 class="review-form__part-title">Посещенные достопримечательности:</h2>
             <fieldset class="sights-visited__fieldset">
-              <ul class="sights-visited__list">
-                <li class="sights-visited__list-item checkbox">
-                  <input class="checkbox__input" id="devils-bridge-id" type="checkbox" name="devils-bridge" checked>
-                  <label class="checkbox__label" for="devils-bridge-id">Мост Дьявола</label>
-                </li>
-                <li class="sights-visited__list-item">
-                  <input class="checkbox__input" id="mountain-bell-id" type="checkbox" name="mountain-bell" checked>
-                  <label class="checkbox__label" for="mountain-bell-id">Гора-Колокол</label>
-                </li>
-                <li class="sights-visited__list-item">
-                  <input class="checkbox__input" id="slide-park-id" type="checkbox" name="slide-park" checked>
-                  <label class="checkbox__label" for="slide-park-id">Слайд-парк</label>
-                </li>
-                <li class="sights-visited__list-item">
-                  <input class="checkbox__input" id="red-rocks-id" type="checkbox" name="red-rocks">
-                  <label class="checkbox__label" for="red-rocks-id">Красные скалы</label>
-                </li>
-              </ul>
+              <p class="review-form__part-item checkbox">
+                <input class="checkbox__input" id="devils-bridge-id" type="checkbox" name="devils-bridge" checked>
+                <label class="checkbox__label" for="devils-bridge-id">Мост Дьявола</label>
+              </p>
+              <p class="review-form__part-item checkbox">
+                <input class="checkbox__input" id="mountain-bell-id" type="checkbox" name="mountain-bell" checked>
+                <label class="checkbox__label" for="mountain-bell-id">Гора-Колокол</label>
+              </p>
+              <p class="review-form__part-item checkbox">
+                <input class="checkbox__input" id="slide-park-id" type="checkbox" name="slide-park" checked>
+                <label class="checkbox__label" for="slide-park-id">Слайд-парк</label>
+              </p>
+              <p class="review-form__part-item checkbox">
+                <input class="checkbox__input" id="red-rocks-id" type="checkbox" name="red-rocks">
+                <label class="checkbox__label" for="red-rocks-id">Красные скалы</label>
+              </p>
             </fieldset>
           </div>
           <div class="review-form__part-wrapper your-emotions">
             <h2 class="review-form__part-title">Опишите свои эмоции:</h2>
             <textarea class="your-emotions__textarea" name="name" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <button class="review__button button" type="submit" name="button">Отправить отзыв</button>
+          <button class="review-form__button button" type="submit" name="button">Отправить отзыв</button>
         </form>
       </section>
       <section class="modal modal--error">
