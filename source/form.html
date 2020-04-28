@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона: Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -57,7 +58,7 @@
           </div>
           <div class="review-form__part-wrapper impression-part">
             <h2 class="review-form__part-title">Ваше общее впечатление:</h2>
-            <fieldset class="impression-part__fieldset">
+            <fieldset class="review-form__fieldset">
               <p class="review-form__part-item radio">
                 <input class="radio__input" id="mainly-positive-id" type="radio" name="impression" value="mainly-positive">
                 <label class="radio__label" for="mainly-positive-id">Скорее положительное</label>
@@ -74,7 +75,7 @@
           </div>
           <div class="review-form__part-wrapper sights-visited">
             <h2 class="review-form__part-title">Посещенные достопримечательности:</h2>
-            <fieldset class="sights-visited__fieldset">
+            <fieldset class="review-form__fieldset">
               <p class="review-form__part-item checkbox">
                 <input class="checkbox__input" id="devils-bridge-id" type="checkbox" name="devils-bridge" checked>
                 <label class="checkbox__label" for="devils-bridge-id">Мост Дьявола</label>
@@ -95,7 +96,7 @@
           </div>
           <div class="review-form__part-wrapper your-emotions">
             <h2 class="review-form__part-title">Опишите свои эмоции:</h2>
-            <textarea class="your-emotions__textarea" name="name" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="your-emotions__textarea" name="name" rows="8" cols="35" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <button class="review-form__button button" type="submit" name="button">Отправить отзыв</button>
         </form>
