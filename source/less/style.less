@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../source/fonts/ptsans.woff2") format("woff2"),
+       url("..source/fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../source/fonts/ptsansbold.woff2") format("woff2"),
+       url("../source/fonts/ptsansbold.woff") format("woff");
+}
+
+@import "variables.less";
+@import "mixins.less";
+
+@import "page-header.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "page-main.less";
+@import "advantages.less";
+@import "reasons-list.less";
+@import "further-comment.less";
+@import "main-booking.less";
+@import "page-footer.less";
+@import "social.less";
+@import "button.less";
+
+@import "review-section.less";
+@import "review-form.less";
+@import "textfield.less";
+@import "radio.less";
+@import "checkbox.less";
+@import "your-emotions.less";
+@import "modal.less";
+
+
+@import "photo-main.less";
+@import "photos.less";
+@import "like-thumb.less";
+@import "videos.less";
+@import "video-controls.less";
+
+
+body {
+ font-family: "PT Sans","Arial", "Helvetica", sans-serif;
+ text-transform: uppercase;
+ text-align: center;
+ color: @black;
+
+ background-color: @white;
+ width: 320px;
+}
