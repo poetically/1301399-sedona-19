@@ -1,67 +1,30 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"),
-       url("../source/fonts/ptsans.woff2") format("woff2"),
-       url("..source/fonts/ptsans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("PT Sans"), local("PTSans-Regular"),
-       url("../source/fonts/ptsansbold.woff2") format("woff2"),
-       url("../source/fonts/ptsansbold.woff") format("woff");
-}
+@import "font.less";
+@import "general.less";
 
 @import "variables.less";
 @import "mixins.less";
-
-@import "page-header.less";
-@import "main-nav.less";
-@import "site-list.less";
-@import "page-main.less";
-@import "advantages.less";
-@import "reasons-list.less";
-@import "further-comment.less";
-@import "main-booking.less";
-@import "page-footer.less";
-@import "social.less";
 @import "button.less";
 
-@import "review-section.less";
-@import "review-form.less";
-@import "textfield.less";
-@import "radio.less";
-@import "checkbox.less";
-@import "your-emotions.less";
-@import "modal.less";
+@import "../blocks/page-header.less";
+@import "../blocks/main-nav.less";
+@import "../blocks/site-list.less";
+@import "../blocks/page-main.less";
+@import "../blocks/advantages.less";
+@import "../blocks/reasons-list.less";
+@import "../blocks/further-comment.less";
+@import "../blocks/main-booking.less";
+@import "../blocks/page-footer.less";
+@import "../blocks/social.less";
+
+@import "../blocks/review-section.less";
+@import "../blocks/review-form.less";
+@import "../blocks/textfield.less";
+@import "../blocks/radio.less";
+@import "../blocks/checkbox.less";
+@import "../blocks/your-emotions.less";
+@import "../blocks/modal.less";
 
 
-@import "photo-main.less";
-@import "photos.less";
-@import "like-thumb.less";
-@import "videos.less";
-@import "video-controls.less";
-
-
-body {
- font-family: "PT Sans","Arial", "Helvetica", sans-serif;
- font-style: normal;
- text-transform: uppercase;
- text-align: center;
- color: @black;
-
- background-color: @white;
- min-width: 320px;
-
- margin: 0;
- padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+@import "../blocks/photo-main.less";
+@import "../blocks/photos.less";
+@import "../blocks/like-thumb.less";
