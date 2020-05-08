@@ -1,6 +1,27 @@
+.page-footer {
+  color: @black;
+  width: 153px;
+  margin: 0 auto;
+}
+
 .page-footer__hash-tag {
   .no-a-style();
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+ }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width - 120 * 2;
+  }
 }

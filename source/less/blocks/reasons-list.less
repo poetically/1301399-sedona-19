@@ -1,3 +1,59 @@
-.reasons-list {
-  list-style: none;
+.reasons-list,
+.reasons-list__further-comment {
+  .list-reset();
+}
+
+.reasons-list__item--real-town,
+.reasons-list__item--devils-bridge {
+  .blue-background();
+}
+
+.reasons-list__number,
+.reasons-list__comment {
+  line-height: 21px;
+}
+
+.reasons-list__item--small-square,
+.reasons-list__item--nice-road,
+.reasons-list__item--few-tourists {
+  background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: @tablet-width;
+  }
+  .reasons-list__item--real-town,
+  .reasons-list__item--devils-bridge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: @tablet-width;
+  }
+  .reasons-list__item-wrapper,
+  .reasons-list__item--small-square,
+  .reasons-list__item--nice-road,
+  .reasons-list__item--few-tourists {
+    width: @tablet-width / 3;
+  }
+  .reasons-list__image--devils-bridge {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons-list,
+  .reasons-list__item--real-town,
+  .reasons-list__item--devils-bridge {
+    width: @desktop-width;
+  }
+  .reasons-list__item-wrapper,
+  .reasons-list__item--small-square,
+  .reasons-list__item--nice-road,
+  .reasons-list__item--few-tourists {
+    width: @desktop-width / 3;
+  }
 }

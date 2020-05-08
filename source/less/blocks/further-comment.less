@@ -1,3 +1,33 @@
 .further-comment {
-  list-style: none;
+  .list-reset();
+  color: @black;
+  background-color: @white;
+}
+
+.further-comment__title {
+  .base-title-style();
+  text-align: left;
+}
+
+.further-comment__description {
+  line-height: 21px;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .further-comment {
+    display: flex;
+    width: 768px;
+  }
+  .further-comment__title,
+  .further-comment__description {
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .further-comment {
+    display: flex;
+    width: 1200px;
+  }
 }

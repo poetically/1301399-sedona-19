@@ -1,13 +1,28 @@
 .site-list {
-  list-style: none;
+  .list-reset();
 }
 
 .site-list__item {
-  .blue-background();
   .base-title-style();
+  .blue-background();
   line-height: 40px;
+  width: 100%;
 }
 
 .site-list__item a {
   .no-a-style();
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    background: @white;
+    color: @black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    background: @white;
+    color: @black;
+  }
 }

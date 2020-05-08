@@ -21,8 +21,10 @@
           </ul>
         </div>
       </nav>
-      <img class="page-header__sedona-lettering" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Логотип туристического сайта города Седона">
-      <img class="page-header__paysage" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Горный пейзаж рядом с городом Седона">
+      <div class="page-header__paysage-lettering">
+        <img class="page-header__sedona-lettering" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Логотип туристического сайта города Седона">
+        <img class="page-header__paysage" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Горный пейзаж рядом с городом Седона">
+      </div>
     </header>
     <main class="form-main">
       <h1 class="visually-hidden">Форма отзыва</h1>
@@ -30,7 +32,7 @@
         <h2 class="review-section__title">Оставьте свой отзыв</h2>
         <p class="review-section__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="review-form__part-wrapper presentation-part">
+          <div class="review-form__part review-form__part--presentation">
             <h2 class="review-form__part-title">Представьтесь:</h2>
             <p class="review-form__part-item textfield">
               <label class="textfield__label" for="first-name-id">Имя*:</label>
@@ -45,18 +47,20 @@
               <input class="textfield__input" id="patronymic-id" type="text" name="patronymic" value="" placeholder="Александрович">
             </p>
           </div>
-          <div class="review-form__part-wrapper contactinfo-part">
+          <div class="review-form__part review-form__part--contactinfo">
             <h2 class="review-form__part-title">Контактная информация:</h2>
-            <p class="review-form__part-item textfield">
-              <label class="textfield__label" for="tel-id">Контактный телефон*:</label>
-              <input class="textfield__input textfield__input--tel" id="tel-id" type="tel" name="tel" value="" placeholder="Введите телефон" required>
-            </p>
-            <p class="review-form__part-item textfield">
+            <div class="review-form__part-item-wrapper">
+              <p class="review-form__part-item review-form__part-item--contactinfo textfield">
+                <label class="textfield__label" for="tel-id">Контактный телефон*:</label>
+                <input class="textfield__input textfield__input--tel" id="tel-id" type="tel" name="tel" value="" placeholder="Введите телефон" required>
+              </p>
+            </div>
+            <p class="review-form__part-item review-form__part-item--contactinfo textfield">
               <label class="textfield__label" for="email-id">Электронная почта*:</label>
               <input class="textfield__input textfield__input--email" id="email-id" type="email" name="email" value="" placeholder="Введите e-mail" required>
             </p>
           </div>
-          <div class="review-form__part-wrapper impression-part">
+          <div class="review-form__part review-form__part--impression">
             <h2 class="review-form__part-title">Ваше общее впечатление:</h2>
             <fieldset class="review-form__fieldset">
               <p class="review-form__part-item radio">
@@ -73,7 +77,7 @@
               </p>
             </fieldset>
           </div>
-          <div class="review-form__part-wrapper sights-visited">
+          <div class="review-form__part review-form__part--sights-visited">
             <h2 class="review-form__part-title">Посещенные достопримечательности:</h2>
             <fieldset class="review-form__fieldset">
               <p class="review-form__part-item checkbox">
@@ -94,9 +98,10 @@
               </p>
             </fieldset>
           </div>
-          <div class="review-form__part-wrapper your-emotions">
+          <div class="review-form__part review-form__part--your-emotions">
+            <!-- WARNING:  достаточно ли здесь h2? или нужен все-таки label?-->
             <h2 class="review-form__part-title">Опишите свои эмоции:</h2>
-            <textarea class="your-emotions__textarea" name="name" rows="8" cols="35" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="textarea-item" name="name" rows="8" cols="35" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <button class="review-form__button button" type="submit" name="button">Отправить отзыв</button>
         </form>
