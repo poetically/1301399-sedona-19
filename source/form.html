@@ -55,10 +55,12 @@
                 <input class="textfield__input textfield__input--tel" id="tel-id" type="tel" name="tel" value="" placeholder="Введите телефон" required>
               </p>
             </div>
-            <p class="review-form__part-item review-form__part-item--contactinfo textfield">
-              <label class="textfield__label" for="email-id">Электронная почта*:</label>
-              <input class="textfield__input textfield__input--email" id="email-id" type="email" name="email" value="" placeholder="Введите e-mail" required>
-            </p>
+            <div class="review-form__part-item-wrapper">
+              <p class="review-form__part-item review-form__part-item--contactinfo textfield">
+                <label class="textfield__label" for="email-id">Электронная почта*:</label>
+                <input class="textfield__input textfield__input--email" id="email-id" type="email" name="email" value="" placeholder="Введите e-mail" required>
+              </p>
+            </div>
           </div>
           <div class="review-form__part review-form__part--impression">
             <h2 class="review-form__part-title">Ваше общее впечатление:</h2>
@@ -79,7 +81,7 @@
           </div>
           <div class="review-form__part review-form__part--sights-visited">
             <h2 class="review-form__part-title">Посещенные достопримечательности:</h2>
-            <fieldset class="review-form__fieldset">
+            <fieldset class="review-form__fieldset review-form__fieldset--sites-visited">
               <p class="review-form__part-item checkbox">
                 <input class="checkbox__input" id="devils-bridge-id" type="checkbox" name="devils-bridge" checked>
                 <label class="checkbox__label" for="devils-bridge-id">Мост Дьявола</label>
@@ -99,9 +101,8 @@
             </fieldset>
           </div>
           <div class="review-form__part review-form__part--your-emotions">
-            <!-- WARNING:  достаточно ли здесь h2? или нужен все-таки label?-->
-            <h2 class="review-form__part-title">Опишите свои эмоции:</h2>
-            <textarea class="textarea-item" name="name" rows="8" cols="35" placeholder="Опишите подробно все свои восторги"></textarea>
+            <h2 class="review-form__part-title"><label for="emotions-id">Опишите свои эмоции:</label></h2>
+            <textarea class="textarea-item" id="emotions-id" name="name" rows="8" cols="35" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <button class="review-form__button button" type="submit" name="button">Отправить отзыв</button>
         </form>
@@ -118,13 +119,15 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
-      <div class="page-footer__wrapper social">
-        <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
-        <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-        <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
+        <div class="page-footer__wrapper-social">
+          <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+          <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+        </div>
+        <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
       </div>
-      <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
     </footer>
   </body>
 </html>
