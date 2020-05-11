@@ -1,9 +1,20 @@
 .review-form__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review-form__part-item {
+  margin: 0;
+  padding: 0;
 }
 
 .review-form__part-title {
   .base-title-style();
+}
+
+.review-form__part-item--contactinfo {
+  flex-direction: column;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,9 +43,17 @@
   .review-form__part--contactinfo {
     order: 0;
     width: 100%;
+  }
+
+  .review-form__part-wrapper--contactinfo {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .review-form__part-item--contactinfo {
+    width: 50%;
   }
 
   .review-form__part--sights-visited {
@@ -63,10 +82,10 @@
 
 @media (min-width: @desktop-width) {
   .review-form {
-    width: @desktop-width - 120 * 2;
+    width: @desktop-width - 120 * 2; //960px
   }
 
-  .review-form__part-item-wrapper {
-    display: flex;
+  .review-form__part-item--contactinfo {
+    flex-direction: row;
   }
 }
