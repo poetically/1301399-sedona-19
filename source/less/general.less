@@ -1,15 +1,26 @@
 body {
+  .base-text-style();
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   text-transform: uppercase;
-  font-weight: 400;
   text-align: center;
-  color: @black;
   background-color: @white;
-  min-width: 320px;
+  min-width: @mobile-width;
   margin: 0;
   padding: 0;
 }
+/*
+@media (min-width: @tablet-width) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background-color: yellow;
+  }
+} */
 
 img {
   max-width: 100%;

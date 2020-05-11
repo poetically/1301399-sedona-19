@@ -21,62 +21,91 @@
           </ul>
         </div>
       </nav>
-      <img class="page-header__sedona-lettering" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Логотип туристического сайта города Седона">
-      <img class="page-header__paysage" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Горный пейзаж рядом с городом Седона">
+      <div class="page-header__paysage-lettering">
+        <img class="page-header__sedona-lettering" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Логотип туристического сайта города Седона">
+        <img class="page-header__paysage" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Горный пейзаж рядом с городом Седона">
+      </div>
     </header>
     <main class="photo-main">
-      <h1>Фото и видео</h1>
+      <h1 class="photo-main__title">Фото и видео</h1>
       <section class="photos">
         <h2 class="visually-hidden">Фотографии</h2>
         <p class="photos__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
         <ul class="photos__list">
-          <li class="photos__list-item">
+          <li class="photos__list-item photos__list-item--large">
             <figure class="photos__figure">
               <a class="photos__link" href="#">
                 <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Вечерний пейзаж: автодорога, уходящая вдаль">
               </a>
-              <figcaption class="photos__figcaption"><h3 class="photos__item-title">Неродные просторы</h3>Автор фото: Борис</figcaption>
+              <figcaption class="photos__figcaption">
+                <h3 class="photos__item-title">Неродные просторы</h3>
+                <p class="photos__item-author">Автор фото: Борис</p>
+              </figcaption>
             </figure>
-            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">1350</span>
+            <div class="like-thumb photos__like-thumb">
+              <button class="like-thumb__button" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button>
+              <span class="like-thumb__like-counter">1350</span>
+            </div>
           </li>
           <li class="photos__list-item">
             <figure class="photos__figure">
               <a class="photos__link" href="#">
                 <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Крупный план растения на фоне пейзажа">
               </a>
-              <figcaption class="photos__figcaption"><h3 class="photos__item-title">Местная растительность</h3>Автор фото: Сергей</figcaption>
+              <figcaption class="photos__figcaption">
+                <h3 class="photos__item-title">Местная растительность</h3>
+                <p class="photos__item-author">Автор фото: Сергей</p></figcaption>
             </figure>
-            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">143</span>
+            <div class="like-thumb photos__like-thumb">
+              <button class="like-thumb__button" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button>
+              <span class="like-thumb__like-counter">143</span>
+            </div>
           </li>
           <li class="photos__list-item">
             <figure class="photos__figure">
               <a class="photos__link" href="#">
                 <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Вид на горный серпантин">
               </a>
-              <figcaption class="photos__figcaption"><h3 class="photos__item-title">Дорога на север</h3>Автор фото: Петр</figcaption>
+              <figcaption class="photos__figcaption">
+                <h3 class="photos__item-title">Дорога на север</h3>
+                <p class="photos__item-author">Автор фото: Петр</p>
+              </figcaption>
             </figure>
-            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">96</span>
+            <div class="like-thumb photos__like-thumb">
+              <button class="like-thumb__button" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button>
+              <span class="like-thumb__like-counter">96</span>
+            </div>
           </li>
           <li class="photos__list-item">
             <figure class="photos__figure">
               <a class="photos__link" href="#">
                 <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Вид на Мост Дьвола">
               </a>
-              <figcaption class="photos__figcaption"><h3 class="photos__item-title">Мост Дьявола</h3>Автор фото: Антон</figcaption>
+              <figcaption class="photos__figcaption">
+                <h3 class="photos__item-title">Мост Дьявола</h3>
+                <p class="photos__item-author">Автор фото: Антон</p>
+              </figcaption>
             </figure>
-            <button class="like-thumb photos__like-thumb" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button><span class="photos__like-counter">254</span>
+            <div class="like-thumb photos__like-thumb">
+              <button class="like-thumb__button" type="button" name="button"><span class="visually-hidden">Мне нравится</span></button>
+              <span class="like-thumb__like-counter">254</span>
+            </div>
           </li>
         </ul>
       </section>
       <section class="videos">
         <h2 class="visually-hidden">Видеоролики</h2>
-        <p class="videos__intro"><span class="videos__span-title">Все еще сомневаетесь? </span>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="videos__p-title">Все еще сомневаетесь?</p>
+        <p class="videos__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз</p>
         <!-- video -->
         <div class="video-controls">
           <div class="video-controls__wrapper">
-            <button class="video-controls__repeat" type="button" name="button"><span>Посмотреть видео еще раз</span></button>
-            <div class="video-controls__scale"></div>
-            <div class="video-controls__toggle"></div>
+            <div class="video-controls__scale-toggle">
+              <div class="video-controls__scale"></div>
+              <div class="video-controls__toggle"></div>
+            </div>
+            <div class="video-controls__bottom-panel"></div>
+            <button class="video-controls__repeat" type="button" name="button"><span class="visually-hidden">Посмотреть видео еще раз</span></button>
             <button class="video-controls__closed-caption" type="button" name="button"><span class="visually-hidden">Скрытые субтитры</span></button>
             <button class="video-controls__full-screen" type="button" name="button"><span class="visually-hidden">Развернуть во весь экран</span></button>
           </div>
@@ -84,13 +113,15 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
-      <div class="page-footer__wrapper social">
-        <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
-        <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-        <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__hash-tag" href="#">#VisitSedona</a>
+        <div class="page-footer__wrapper-social">
+          <a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+          <a class="social__item social__item--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          <a class="social__item social__item--youtube" href="#"><span class="visually-hidden">Наш youtube-канал</span></a>
+        </div>
+        <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
       </div>
-      <p class="page-footer__developed-by">Разработано<a class="page-footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> Html Academy</span></a></p>
     </footer>
   </body>
 </html>
