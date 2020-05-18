@@ -11,11 +11,63 @@
 
 .site-list__item a {
   .no-a-style();
+  display: block;
+  padding: 15px 90px;
+}
+
+.site-list__item a[href]:hover {
+  background-color: @base-blue-hover;
+}
+
+.site-list__item a[href]:active {
+  background-color: @base-blue-down;
+  color: @white-lettering-down;
 }
 
 @media (min-width: @tablet-width) {
+  .site-list {
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
   .site-list__item {
     background: @white;
     color: @black;
+    width: 153px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 156px;
+  }
+
+  .site-list__item a {
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 150px;
+  }
+
+  .site-list__item a[href]:hover {
+    background-color: @white;
+    color: @base-blue;
+  }
+
+  .site-list__item a[href]:active {
+    background-color: @white;
+    color: @menu-lettering-down;
+  }
+
+  .site-list__item--active {
+    color: @menu-lettering-active;
+
+    &:hover {
+      color: @menu-lettering-activehav;
+    }
+
+    &:active {
+      color: @menu-lettering-activedown;
+    }
   }
 }
