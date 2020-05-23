@@ -1,11 +1,44 @@
-.reasons-list,
-.reasons-list__further-comment {
+.reasons-list {
   .list-reset();
 }
 
-.reasons-list__item--real-town,
-.reasons-list__item--devils-bridge {
+.reasons-list__image {
+  display: block;
+}
+
+.reasons-list__item--detailed .reasons-list__item-wrapper {
   .blue-background();
+}
+
+.reasons-list__title {
+  .base-title-style();
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-list__item--detailed .reasons-list__title {
+  color: @white;
+  padding-top: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reasons-list__item--devils-bridge .reasons-list__title {
+  padding-top: 35px;
+}
+
+.reasons-list__number {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.reasons-list__comment {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .reasons-list__number,
@@ -13,10 +46,31 @@
   line-height: 21px;
 }
 
-.reasons-list__item--small-square,
-.reasons-list__item--nice-road,
-.reasons-list__item--few-tourists {
+.reasons-list__item--notdetailed {
+  position: relative;
   background-color: @light-grey;
+  margin: 0;
+  padding: 0;
+
+  & .reasons-list__title {
+    padding-top: 25px;
+  }
+
+  & .reasons-list__comment {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  &:not(:last-child) ::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 280px;
+    height: 1px;
+    // WARNING: не удалось найти в макете оттенок серого для этой отбивки:
+    background-color: rgba(1, 1, 1, 0.05);
+  }
 }
 
 @media (min-width: @tablet-width) {
