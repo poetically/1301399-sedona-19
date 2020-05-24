@@ -22,8 +22,8 @@
           </ul>
         </nav>
         <div class="page-header__paysage-lettering">
-          <img class="page-header__lettering" src="https://via.placeholder.com/281x214" width="281" height="214" alt="Логотип туристического сайта города Седона">
-          <img class="page-header__paysage" src="https://via.placeholder.com/320x389" width="320" height="389" alt="Горный пейзаж, видимый из города">
+          <img class="page-header__welcome-lettering" src="img/text-sedona-index.svg" width="281" height="214" alt="Логотип туристического сайта города Седона">
+          <!-- <img class="page-header__paysage" src="https://via.placeholder.com/320x389" width="320" height="389" alt="Горный пейзаж, видимый из города"> -->
         </div>
       </header>
       <main class="page-main">
@@ -39,7 +39,11 @@
                 <p class="reasons-list__number">&#8211; №1 &#8211;</p>
                 <p class="reasons-list__comment">Седона не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
               </div>
-              <img class="reasons-list__image" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Традиционный деревянный дом с галереей">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="reasons-list__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Традиционный деревянный дом с галереей">
+              </picture>
               <ul class="reasons-list__further-comment further-comment">
                 <li class="further-comment__item further-comment__item--motel">
                   <h4 class="further-comment__title">Жилье</h4>
@@ -61,7 +65,11 @@
                 <p class="reasons-list__number">&#8211; №2 &#8211;</p>
                 <p class="reasons-list__comment">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="reasons-list__image reasons-list__image--devils-bridge" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Мост Дьявола, представляющий из себя скалистый выступ над пропастью">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="reasons-list__image reasons-list__image--devils-bridge" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола, представляющий из себя скалистый выступ над пропастью">
+              </picture>
             </li>
             <li class="reasons-list__item reasons-list__item--notdetailed reasons-list__item--small-square">
               <h3 class="reasons-list__title">Небольшая площадь</h3>
@@ -85,7 +93,11 @@
           <p class="main-booking__question">Заинтересовались?</p>
           <p class="main-booking__solution">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения&nbsp;гостиниц в Седоне</p>
           <a class="main-booking__search-button button button--button-like" href="#">Найти гостиницу</a>
-          <img class="main-booking__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта штата Аризона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="main-booking__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта штата Аризона">
+          </picture>
         </section>
       </main>
       <footer class="page-footer">
