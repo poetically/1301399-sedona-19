@@ -15,10 +15,11 @@
   height: 390px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px 390px;
   }
 }
 
@@ -64,6 +65,7 @@
     width: @tablet-width;
     height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: @tablet-width 518px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -96,6 +98,7 @@
   .page-header__paysage-lettering {
     width: @desktop-width;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: @desktop-width 518px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");

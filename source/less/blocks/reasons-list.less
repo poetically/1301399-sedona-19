@@ -99,6 +99,14 @@
   .reasons-list__item--notdetailed:not(:last-child) ::after {
     display: none;
   }
+
+  .reasons-list__title {
+    font-size: 21px;
+  }
+
+  .reasons-list__item--detailed .reasons-list__title {
+    padding-top: 45px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -117,5 +125,11 @@
 
   .reasons-list__image {
     width: 2 / 3 * @desktop-width; // 800px
+    object-fit: cover;
+  }
+
+  .reasons-list__image-wrapper {
+    width: 800px;
+    height: 256px;
   }
 }
