@@ -2,10 +2,23 @@
   .list-reset();
   color: @black;
   background-color: @white;
-  padding-left: 70px;
   padding-right: 30px;
   padding-bottom: 15px;
   padding-top: 35px;
+}
+
+.further-comment__item {
+  position: relative;
+  padding-left: 70px;
+}
+
+.further-comment__icon-house {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  fill: @base-blue;
 }
 
 .further-comment__title {
@@ -27,18 +40,36 @@
 @media (min-width: @tablet-width) {
   .further-comment {
     display: flex;
-    width: 768px;
+    flex-wrap: wrap;
+    width: 680px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0;
+    justify-content: space-between;
   }
 
-  .further-comment__title,
+  .further-comment__item {
+    padding-top: 160px;
+    padding-left: 0;
+  }
+
+  .further-comment__item--souvenirs {
+    order: 1;
+  }
+
+  .further-comment__title {
+    font-size: 21px;
+    text-align: center;
+  }
+
   .further-comment__description {
     text-align: center;
+    width: 165px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .further-comment {
-    display: flex;
     width: 1200px;
   }
 }
