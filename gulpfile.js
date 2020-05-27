@@ -27,7 +27,8 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
-      imagemin.svgo()
+      //скопировано из интернета, но на моих уже оптимизированных изображениях бесполезно:/
+      imagemin.svgo({ svgoPlugins: {removeViewBox: false}})
     ]))
     .pipe(gulp.dest("source/img"));
 });
@@ -64,7 +65,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src(["source/img/icon-video-*.svg", "source/img/logo-htmlacademy.svg"])
     .pipe(svgstore({
       inlineSvg: true
     }))
