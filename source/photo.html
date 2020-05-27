@@ -5,7 +5,6 @@
     <title>HTML Academy: Седона: Фото и видео</title>
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script>document.createElement( "picture" );</script>
     <script src="js/picturefill-min.js" async></script>
   </head>
   <body>
@@ -32,7 +31,6 @@
         </nav>
         <div class="page-header__paysage-lettering-min">
           <img class="page-header__lettering" src="img/text-sedona.svg" width="230" height="40" alt="Логотип туристического сайта города Седона">
-          <!-- <img class="page-header__paysage" src="https://via.placeholder.com/320x389" width="320" height="389" alt="Горный пейзаж, видимый из города"> -->
         </div>
       </header>
       <main class="photo-main">
@@ -45,6 +43,9 @@
               <figure class="photos__figure">
                 <a class="photos__link" href="#">
                   <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                     <img class="photos__image photos__image--large" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Вечерний пейзаж: автодорога, уходящая вдаль">
@@ -64,6 +65,9 @@
               <figure class="photos__figure">
                 <a class="photos__link" href="#">
                   <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                     <img class="photos__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Крупный план кактуса на фоне пейзажа">
@@ -82,6 +86,9 @@
               <figure class="photos__figure">
                 <a class="photos__link" href="#">
                   <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                     <img class="photos__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на горный серпантин">
@@ -101,6 +108,9 @@
               <figure class="photos__figure">
                 <a class="photos__link" href="#">
                   <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                     <img class="photos__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на Мост Дьвола">
@@ -125,21 +135,27 @@
           <!-- video -->
           <div class="video-player">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 320px)" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video-player__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="321" height="201" alt="Дорога на фоне горного пейзажа">
             </picture>
             <div class="video-player__controls video-controls">
-              <div class="video-controls__wrapper">
-                <div class="video-controls__scale-toggle">
-                  <div class="video-controls__scale"></div>
-                  <div class="video-controls__toggle"></div>
-                </div>
-                <div class="video-controls__bottom-panel"></div>
-                <button class="video-controls__repeat" type="button" name="button"><span class="visually-hidden">Посмотреть видео еще раз</span></button>
-                <button class="video-controls__closed-caption" type="button" name="button"><span class="visually-hidden">Скрытые субтитры</span></button>
-                <button class="video-controls__full-screen" type="button" name="button"><span class="visually-hidden">Развернуть во весь экран</span></button>
+              <div class="video-controls__scale-toggle">
+                <div class="video-controls__scale"></div>
+                <div class="video-controls__toggle"></div>
               </div>
+              <button class="video-controls__repeat" type="button" name="button" title="Посмотреть видео еще раз">
+
+              </button>
+              <button class="video-controls__closed-caption" type="button" name="button" title="Скрытые субтитры">
+
+              </button>
+              <button class="video-controls__full-screen" type="button" name="button" title="Развернуть во весь экран">
+
+              </button>
             </div>
           </div>
         </section>

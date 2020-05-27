@@ -11,6 +11,7 @@
 }
 
 .page-header__paysage-lettering {
+  position: relative;
   width: 320px;
   height: 390px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -23,7 +24,21 @@
   }
 }
 
+.page-header__paysage-lettering::after,
+.page-header__paysage-lettering-min::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .page-header__paysage-lettering-min {
+  position: relative;
   width: 320px;
   height: 158px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -84,6 +99,13 @@
     }
   }
 
+  .page-header__paysage-lettering::after,
+  .page-header__paysage-lettering-min::after {
+    width: 768px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
   .page-header__lettering {
     width: 460px;
     height: 80px;
@@ -116,6 +138,12 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: @desktop-width 300px;
     }
+  }
+
+  .page-header__paysage-lettering::after,
+  .page-header__paysage-lettering-min::after {
+    width: 1200px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 
   .page-header__lettering {
