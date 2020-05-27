@@ -11,7 +11,7 @@
   position: relative;
   padding-left: 70px;
 }
-
+// WARNING: этот псевдоэлемент не появляется в DOM, соответственно, на странице ничего не появляется... Много раз проверила, не вижу, в чем ошибка
 .further-comment__item--motel::before {
   position: absolute;
   top: 0;
@@ -19,6 +19,28 @@
   width: 37px;
   height: 36px;
   background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.further-comment__item--souvenirs::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.further-comment__item--food::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }

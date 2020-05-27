@@ -20,10 +20,12 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px 390px;
+    background-size: cover;
+    background-position: center;
   }
 }
 
+// что-то не так с этим треугольником: как будто он на несколько пикселей меньше, чем ширина макета
 .page-header__paysage-lettering::after,
 .page-header__paysage-lettering-min::after {
   content: "";
