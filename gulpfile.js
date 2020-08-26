@@ -28,13 +28,16 @@ gulp.task("images", function () {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
       //скопировано из интернета, но на моих уже оптимизированных изображениях бесполезно:/
-      imagemin.svgo({ svgoPlugins: {removeViewBox: false}})
+      // imagemin.svgo({svgoPlugins: {removeViewBox: false}})
+      imagemin.svgo({"plugins": [{"removeViewBox": false}]})
     ]))
     .pipe(gulp.dest("source/img"));
+    // .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("clean", function () {
   return del("build");
+
 });
 
 gulp.task("copy", function () {
